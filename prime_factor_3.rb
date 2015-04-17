@@ -6,8 +6,7 @@ What is the largest prime factor of the number 600851475143 ?
 
 =end
 
-#what are the factors of 600851475143?
-
+# That number is way to effing big, used a smaller number so I wouldn't have to wait days for the calculation.
 
 
 a = []
