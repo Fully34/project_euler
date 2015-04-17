@@ -16,20 +16,20 @@ Find the largest palindrome made from the product of two 3-digit numbers.
 def pal(num)
 	palindrome = nil
 	num = num.to_s
+	arr_pally = []
 	if (num == num.reverse)
 		palindrome = true
-		return "#{num} is a palindrome!"
+		arr_pally << num
 	else
 		palindrome = false
-		return "#{num} is not a palindrome"
 	end
+	arr_pally
 end
 
 
 def combo
 	y = (100..999).to_a
 	a = 100
-
 	while (a < 1000)
 		y.each do |x|
 			z = x * a
@@ -39,4 +39,4 @@ def combo
 	end
 end
 
-puts combo
+combo
