@@ -11,19 +11,19 @@ Find the largest palindrome made from the product of two 3-digit numbers.
 #define palindrome
 
 
-
+$a_pal =[]
 
 def pal(num)
 	palindrome = nil
 	num = num.to_s
-	arr_pally = []
+	arr_paly = []
 	if (num == num.reverse)
 		palindrome = true
-		arr_pally << num
+		arr_paly << num.to_i
 	else
 		palindrome = false
 	end
-	arr_pally
+	arr_paly
 end
 
 
@@ -33,10 +33,12 @@ def combo
 	while (a < 1000)
 		y.each do |x|
 			z = x * a
-			puts pal(z)
-			end
+			$a_pal << pal(z)
+		end
 		a += 1
 	end
 end
 
 combo
+
+puts $a_pal.sort.uniq.max
