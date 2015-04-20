@@ -34,4 +34,5 @@ def sums(num)
 	puts sum_arr.inject(:+)
 end
 
-sums(2_000_000)
+#sums(2_000_000) TAKES A LONG ASS TIME TO RUN!
+sums(2_000)
