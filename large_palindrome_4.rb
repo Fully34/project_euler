@@ -41,4 +41,4 @@ end
 
 combo
 
-puts $a_pal.sort.uniq.max
+puts .sort.uniq.max
